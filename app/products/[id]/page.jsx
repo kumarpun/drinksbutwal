@@ -366,7 +366,7 @@ export default function ProductDetailPage() {
                       <img
                         src={firstImage}
                         alt={rp.name}
-                        className="w-full h-32 sm:h-48 object-cover"
+                        className="w-full h-32 sm:h-48 object-contain"
                       />
                     ) : (
                       <div className="w-full h-32 sm:h-48 bg-zinc-100 flex items-center justify-center">

@@ -33,13 +33,6 @@ export async function POST(request) {
     await Order.sync();
     await OrderItem.sync();
 
-    // Ensure userId allows NULL for guest orders
-    try {
-      const conn = await getConnection();
-      await conn.execute("ALTER TABLE orders MODIFY COLUMN userId INT DEFAULT NULL");
-      conn.release();
-    } catch {}
-
 
     const { items, shippingName, shippingPhone, shippingAddress, shippingCity, shippingState, shippingZip, paymentMethod, paymentScreenshot, deliveryCharge: clientDeliveryCharge, paidAmount: clientPaidAmount } =
       await request.json();
