@@ -119,7 +119,7 @@ export default function Home() {
           }`}>
             {storeOpen
               ? "\uD83D\uDFE2 We're Open - Order Now!"
-              : "\uD83D\uDD34 We're Closed - Opens at 6 PM"}
+              : "\uD83D\uDD34 We're Closed Now"}
           </div>
 
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight drop-shadow-lg">
