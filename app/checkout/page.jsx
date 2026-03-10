@@ -264,7 +264,7 @@ export default function CheckoutPage() {
             </svg>
             <div>
               <p className="text-red-400 font-semibold">Store is currently closed</p>
-              <p className="text-red-400/80 text-sm mt-1">We accept orders from 6:00 PM to 1:00 AM (Nepal Time). Please come back during operating hours to place your order.</p>
+              <p className="text-red-400/80 text-sm mt-1">We accept orders till 1:00 AM (Nepal Time). Please come back during operating hours to place your order.</p>
             </div>
           </div>
         )}
