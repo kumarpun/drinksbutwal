@@ -329,14 +329,14 @@ export default function CheckoutPage() {
 
             <div className="mb-4 relative" ref={cityRef}>
               <label htmlFor="city" className="block text-sm font-medium mb-2 text-zinc-700">
-                City *
+                Nagarpalika *
               </label>
               {cities.length > 0 ? (
                 <>
                   <input
                     type="text"
                     id="city"
-                    placeholder="Search city..."
+                    placeholder="Search nagarpalika..."
                     value={citySearch}
                     onChange={(e) => {
                       const val = e.target.value;

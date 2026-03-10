@@ -160,17 +160,17 @@ export default function AdminSettingsPage() {
       </form>
 
       <div className="bg-white p-4 sm:p-8 rounded-lg shadow-md">
-        <h2 className="text-lg font-semibold text-zinc-800 mb-4">City-wise Delivery Charges</h2>
+        <h2 className="text-lg font-semibold text-zinc-800 mb-4">Nagarpalika-wise Delivery Charges</h2>
         {cityMessage && (
           <div className={`mb-4 p-3 rounded-md text-sm ${cityMessage.includes("success") || cityMessage.includes("deleted") ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
             {cityMessage}
           </div>
         )}
         <form onSubmit={handleAddCity} className="flex flex-col sm:flex-row gap-3 mb-6">
-          <input type="text" placeholder="City name" value={newCityName} onChange={(e) => setNewCityName(e.target.value)} required className="flex-1 px-4 py-2 border border-zinc-300 rounded-md bg-white text-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-400" />
+          <input type="text" placeholder="Nagarpalika name" value={newCityName} onChange={(e) => setNewCityName(e.target.value)} required className="flex-1 px-4 py-2 border border-zinc-300 rounded-md bg-white text-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-400" />
           <input type="number" placeholder="Charge (Rs)" value={newCityCharge} onChange={(e) => setNewCityCharge(e.target.value)} min="0" step="0.01" required className="w-full sm:w-32 px-4 py-2 border border-zinc-300 rounded-md bg-white text-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-400" />
           <button type="submit" disabled={addingCity} className="px-4 py-2 bg-zinc-700 text-white rounded-md font-medium hover:bg-zinc-600 transition-colors disabled:opacity-50 text-sm">
-            {addingCity ? "Adding..." : "Add City"}
+            {addingCity ? "Adding..." : "Add Nagarpalika"}
           </button>
         </form>
         <input type="text" placeholder="Search cities..." value={citySearch} onChange={(e) => { setCitySearch(e.target.value); setCityPage(1); }} className="w-full px-4 py-2 border border-zinc-300 rounded-md bg-white text-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-400 mb-4 text-sm" />
