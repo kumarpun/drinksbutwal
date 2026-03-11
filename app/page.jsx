@@ -24,8 +24,7 @@ function getNepalTime() {
 function isStoreOpen() {
   const nepal = getNepalTime();
   const hours = nepal.getHours();
-  // Open from 6 PM (18) to 1 AM (1)
-  return hours >= 18 || hours < 1;
+  return hours >= 10 || hours < 1;
 }
 
 function ProductCard({ product }) {

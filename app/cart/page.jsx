@@ -17,7 +17,7 @@ function getNepalTime() {
 function isStoreOpen() {
   const nepal = getNepalTime();
   const hours = nepal.getHours();
-  return hours >= 18 || hours < 1;
+  return hours >= 10 || hours < 1;
 }
 
 const itemKey = (item) => `${item.productId}-${item.size}`;
